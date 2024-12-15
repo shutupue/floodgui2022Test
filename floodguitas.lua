@@ -54,10 +54,10 @@ while wait() do
             game.Debris:AddItem(msg, 3)  -- Fixed to use 'msg' instead of 'txt'
         end
     }
-    local oldalert
+    --[[local oldalert
     oldalert = hookfunction(CLMAIN.newAlert, function(...)
         return oldalert(...)
-    end)
+    end)--]]
     if not getrenv().alreadystarted then
         CLMAIN.newAlert("TAS Player Started.", Color3.fromRGB(255, 149, 5))
         getrenv().alreadystarted = true
